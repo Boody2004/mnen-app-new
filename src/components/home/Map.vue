@@ -69,7 +69,6 @@
         color="cyan"
       >
         <v-icon> mdi-credit-card </v-icon>
-        <h1>hello</h1>
       </v-btn>
       <v-btn
         @click="
