@@ -138,6 +138,7 @@ export default {
     axios.get("https://mnen.herokuapp.com/api/getAtm").then((response) => {
       this.atms = response.data;
     });
+
     axios.get("https://mnen.herokuapp.com/api/getPharmacy").then((response) => {
       this.pharmacies = response.data;
     });
@@ -149,5 +150,3 @@ export default {
   },
 };
 </script>
-
-<style scoped></style>

@@ -1,6 +1,7 @@
 <template>
   <div class="overflow-hidden">
     <v-app-bar
+      absolute
       elevate-on-scroll
       scroll-target="#scrolling-techniques-7"
       color="#344955"
@@ -9,7 +10,7 @@
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
 
       <v-btn fab class="mr-4 mt-5" color="#F9AA33" to="/">
-        <v-icon color="#232F34" large> mdi-hand-pointing-right </v-icon>
+        <v-icon color="#232F34" large> mdi-pound </v-icon>
       </v-btn>
 
       <v-toolbar-title>Mnen app</v-toolbar-title>
@@ -18,9 +19,9 @@
     <v-sheet
       id="scrolling-techniques-7"
       class="overflow-y-auto"
-      max-height="600"
+      max-height="955"
     >
-      <v-container>
+      <v-container style="padding-top: 5rem">
         <router-view />
       </v-container>
     </v-sheet>
@@ -72,6 +73,11 @@
           </v-list-item>
         </v-list-item-group>
       </v-list>
+      <template v-slot:append>
+        <div class="pa-2">
+          <v-btn to="/admin" block color="#F9AA33"> Admen </v-btn>
+        </div>
+      </template>
     </v-navigation-drawer>
   </div>
 </template>

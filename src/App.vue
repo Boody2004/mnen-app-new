@@ -11,7 +11,7 @@ import ToolBar from "./components/app/ToolBar.vue";
 import Footer from "./components/app/Footer.vue";
 
 export default Vue.extend({
-  components: { ToolBar, Footer },
+  components: { ToolBar },
   name: "App",
 });
 </script>
