@@ -1,17 +1,15 @@
 <template>
   <v-app>
-    <ToolBar />
-    <Footer />
+    <Sidebar />
   </v-app>
 </template>
 
 <script>
 import Vue from "vue";
-import ToolBar from "./components/app/ToolBar.vue";
-import Footer from "./components/app/Footer.vue";
+import Sidebar from "./components/app/SideBar.vue";
 
 export default Vue.extend({
-  components: { ToolBar },
+  components: { Sidebar },
   name: "App",
 });
 </script>
