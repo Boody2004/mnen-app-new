@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <div style="height: 100vh; width: 100%">
-      <div v-if="!atms || !pharmacies || !supermarkets">
+  <section>
+    <div style="height: 60vh; width: 90%; margin-left: 5%">
+      <!-- <div v-if="!atms || !pharmacies || !supermarkets">
         <v-progress-linear
           buffer-value="65"
           stream
           color="cyan"
         ></v-progress-linear>
-      </div>
+      </div> -->
       <l-map
         v-if="atms && pharmacies && supermarkets"
         :zoom="zoom"
@@ -53,23 +53,12 @@
         </div>
       </l-map>
     </div>
-    <div style="margin: -50px 0 0 0">
-      <v-btn
-        @click="
-          () => {
-            showAtm = true;
-            showPharmacy = false;
-            showSupermarket = false;
-          }
-        "
-        class="mx-2"
-        fab
-        dark
-        small
-        color="cyan"
-      >
-        <v-icon> mdi-credit-card </v-icon>
-      </v-btn>
+
+    <v-row
+      align="center"
+      justify="space-around"
+      style="margin: -60px 35% 0 35%"
+    >
       <v-btn
         @click="
           () => {
@@ -78,14 +67,28 @@
             showSupermarket = false;
           }
         "
-        class="mx-1"
-        fab
-        dark
-        small
-        color="cyan"
+        class="my-3"
+        color="#F9AA33"
       >
-        <v-icon dark> mdi-calendar-plus </v-icon>
+        <v-icon color="#232F34"> mdi-calendar-plus </v-icon>
+        Pharmacy
       </v-btn>
+
+      <v-btn
+        @click="
+          () => {
+            showAtm = true;
+            showPharmacy = false;
+            showSupermarket = false;
+          }
+        "
+        class="my-3"
+        color="#F9AA33"
+      >
+        <v-icon color="#232F34"> mdi-credit-card </v-icon>
+        Atms
+      </v-btn>
+
       <v-btn
         @click="
           () => {
@@ -94,16 +97,14 @@
             showSupermarket = true;
           }
         "
-        class="mx-2"
-        fab
-        dark
-        small
-        color="cyan"
+        class="my-1"
+        color="#F9AA33"
       >
-        <v-icon> mdi-cart-outline </v-icon>
+        <v-icon color="#232F34"> mdi-cart-outline </v-icon>
+        Supermarket
       </v-btn>
-    </div>
-  </div>
+    </v-row>
+  </section>
 </template>
 
 <script>
@@ -148,3 +149,5 @@ export default {
   },
 };
 </script>
+
+<style scoped></style>
