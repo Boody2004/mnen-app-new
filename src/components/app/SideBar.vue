@@ -36,10 +36,10 @@
           <div class="iocn-link">
             <a href="/aboutUs">
               <i class="fas fa-address-book"></i>
-              <span class="link_name">About Us</span>
+              <span class="link_name">About</span>
             </a>
             <ul class="sub-menu blank">
-              <li><a class="link_name" href="/aboutUs">About Us</a></li>
+              <li><a class="link_name" href="/aboutUs">About</a></li>
             </ul>
           </div>
         </li>
@@ -47,10 +47,10 @@
           <div class="iocn-link">
             <a href="/contactUs">
               <i class="fas fa-id-card"></i>
-              <span class="link_name">Contact Us</span>
+              <span class="link_name">Contact</span>
             </a>
             <ul class="sub-menu blank">
-              <li><a class="link_name" href="/contactUs">Contact Us</a></li>
+              <li><a class="link_name" href="/contactUs">Contact</a></li>
             </ul>
           </div>
         </li>

@@ -47,7 +47,7 @@ export default {
     return {
       items: [
         {
-          src: "https://res.cloudinary.com/dirbnpgsp/image/upload/v1641866703/world-140304_1920_eddb29.jpg",
+          src: "https://res.cloudinary.com/dirbnpgsp/image/upload/v1641866813/Mnen%20App/map_1920_ikovt1.jpg",
           title: "First App",
           subTitle: "Map Location",
           product: [
