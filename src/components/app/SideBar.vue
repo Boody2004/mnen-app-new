@@ -3,6 +3,7 @@
     <div class="sidebar close">
       <div class="logo-details">
         <i class="menu fas fa-bars"></i>
+        <!-- <i class="menu fi fi-rr-align-justify"></i> -->
         <a href="/">
           <span class="logo_name">Mnen app</span>
         </a>

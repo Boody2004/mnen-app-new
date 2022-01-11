@@ -1,3 +1,13 @@
 <template>
-  <h1>Home</h1>
+  <section>
+    <Carosile />
+  </section>
 </template>
+
+<script>
+import Carosile from "../components/home/Carousels.vue";
+export default {
+  name: "Home",
+  components: { Carosile },
+};
+</script>
