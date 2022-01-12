@@ -16,9 +16,6 @@
               <i class="fas fa-home"></i>
               <span class="link_name">Home</span>
             </a>
-            <ul class="sub-menu blank">
-              <li><a class="link_name" href="/">Home</a></li>
-            </ul>
           </div>
         </li>
         <li>
@@ -27,9 +24,6 @@
               <i class="fas fa-map-marker-alt"></i>
               <span class="link_name">Map</span>
             </a>
-            <ul class="sub-menu blank">
-              <li><a class="link_name" href="/map">Map</a></li>
-            </ul>
           </div>
         </li>
         <li>
@@ -38,9 +32,6 @@
               <i class="fas fa-address-book"></i>
               <span class="link_name">About</span>
             </a>
-            <ul class="sub-menu blank">
-              <li><a class="link_name" href="/aboutUs">About</a></li>
-            </ul>
           </div>
         </li>
         <li>
@@ -49,9 +40,6 @@
               <i class="fas fa-id-card"></i>
               <span class="link_name">Contact</span>
             </a>
-            <ul class="sub-menu blank">
-              <li><a class="link_name" href="/contactUs">Contact</a></li>
-            </ul>
           </div>
         </li>
       </ul>
@@ -107,12 +95,6 @@ a {
   left: 78px;
   width: calc(100% - 78px);
 }
-@media (max-width: 420px) {
-  .sidebar.close .nav-links li .sub-menu {
-    display: none;
-  }
-}
-
 .sidebar {
   position: fixed;
   top: 0;
@@ -206,63 +188,6 @@ a {
 .sidebar.close .nav-links li a .link_name {
   opacity: 0;
   pointer-events: none;
-}
-.sidebar .nav-links li .sub-menu {
-  padding: 6px 6px 14px 80px;
-  margin-top: -10px;
-  background: #4a6572;
-  display: none;
-}
-.sidebar .nav-links li.showMenu .sub-menu {
-  display: block;
-}
-.sidebar .nav-links li .sub-menu a {
-  color: #cfd8dc;
-  font-size: 15px;
-  padding: 5px 0;
-  white-space: nowrap;
-  opacity: 0.6;
-  transition: all 0.3s ease;
-}
-.sidebar .nav-links li .sub-menu a:hover {
-  opacity: 1;
-}
-.sidebar.close .nav-links li .sub-menu {
-  position: absolute;
-  left: 100%;
-  top: -10px;
-  margin-top: 0;
-  padding: 10px 20px;
-  border-radius: 0 6px 6px 0;
-  opacity: 0;
-  display: block;
-  pointer-events: none;
-  transition: 0s;
-}
-.sidebar.close .nav-links li:hover .sub-menu {
-  top: 0;
-  opacity: 1;
-  pointer-events: auto;
-  transition: all 0.4s ease;
-}
-.sidebar .nav-links li .sub-menu .link_name {
-  display: none;
-}
-.sidebar.close .nav-links li .sub-menu .link_name {
-  font-size: 18px;
-  opacity: 1;
-  display: block;
-}
-.sidebar .nav-links li .sub-menu.blank {
-  opacity: 1;
-  pointer-events: auto;
-  padding: 3px 20px 6px 16px;
-  opacity: 0;
-  pointer-events: none;
-}
-.sidebar .nav-links li:hover .sub-menu.blank {
-  top: 50%;
-  transform: translateY(-50%);
 }
 .sidebar .profile-details {
   position: fixed;

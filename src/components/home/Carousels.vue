@@ -1,20 +1,20 @@
 <template>
   <v-carousel cycle height="700" hide-delimiters show-arrows-on-hover>
     <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src">
-      <v-row
-        class="flex-column mb-6 fill-height"
-        align="center"
-        justify="center"
-      >
-        <div>
-          <div class="text-h4 white--text">{{ item.title }}</div>
-          <div class="text-h2 amber--text">{{ item.subTitle }}</div>
-          <div :class="{ invisible: !item.product }" class="d-flex py-2">
+      <v-row class="fill-height" align="center" justify="center">
+        <div class="" style="width: 80%">
+          <div class="title text-h4 white--text">{{ item.title }}</div>
+          <div class="subtitle text-h3 amber--text">{{ item.subTitle }}</div>
+          <div
+            :class="{ invisible: !item.product }"
+            class="pop d-flex py-2"
+            style="flex-wrap: wrap"
+          >
             <div
               class="text-h6 white--text pr-2"
               style="text-transform: uppercase"
             >
-              product :
+              product:
             </div>
             <div
               v-for="productItem in item.product"
