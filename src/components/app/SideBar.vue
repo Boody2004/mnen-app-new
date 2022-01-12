@@ -83,7 +83,6 @@ export default {
 a {
   text-decoration: none;
 }
-
 .content {
   position: relative;
   height: auto;

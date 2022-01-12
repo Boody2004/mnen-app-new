@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" style="padding: 0 10%">
     <div class="py-14">
       <ContactFormField name="title" type="text" labelText="Name" />
       <ContactFormField name="title" type="text" labelText="Section Name" />
@@ -91,9 +91,6 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  padding: 0 10%;
-}
 @media screen and (max-width: 425px) {
   .container {
     padding: 0 5%;

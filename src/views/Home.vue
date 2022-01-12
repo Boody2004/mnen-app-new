@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Carosile from "../components/home/Carousels.vue";
+import Carosile from "@/components/home/Carousels.vue";
 export default {
   name: "Home",
   components: { Carosile },

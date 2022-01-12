@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section style="margin: 1.5%">
     <div class="Map Input Data">
       <h2
         class="text-center rounded-t-lg pa-3"
@@ -19,9 +19,3 @@ export default {
   components: { MapInputData },
 };
 </script>
-
-<style scoped>
-section {
-  margin: 1.5%;
-}
-</style>
