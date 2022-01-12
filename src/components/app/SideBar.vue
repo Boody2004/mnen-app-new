@@ -30,7 +30,7 @@
           <div class="iocn-link">
             <a href="/aboutUs">
               <i class="fas fa-address-book"></i>
-              <span class="link_name">About</span>
+              <span class="link_name">About Us</span>
             </a>
           </div>
         </li>
@@ -38,7 +38,7 @@
           <div class="iocn-link">
             <a href="/contactUs">
               <i class="fas fa-id-card"></i>
-              <span class="link_name">Contact</span>
+              <span class="link_name">Contact Us</span>
             </a>
           </div>
         </li>

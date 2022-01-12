@@ -18,7 +18,7 @@
 
     <v-stepper-items>
       <v-stepper-content step="1">
-        <v-card class="mb-12" color="#4A6572" height="auto">
+        <v-card class="mb-12" color="#344955" height="auto">
           <Input v-if="pharmacies" :locationData="pharmacies" />
         </v-card>
 
@@ -26,7 +26,7 @@
       </v-stepper-content>
 
       <v-stepper-content step="2">
-        <v-card class="mb-12" color="#4A6572" height="auto">
+        <v-card class="mb-12" color="#344955" height="auto">
           <Input v-if="atms" :locationData="atms" />
         </v-card>
 
@@ -36,7 +36,7 @@
       </v-stepper-content>
 
       <v-stepper-content step="3">
-        <v-card class="mb-12" color="#4A6572" height="auto">
+        <v-card class="mb-12" color="#344955" height="auto">
           <Input v-if="supermarkets" :locationData="supermarkets" />
         </v-card>
 

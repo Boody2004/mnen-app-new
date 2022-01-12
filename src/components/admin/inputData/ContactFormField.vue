@@ -1,6 +1,15 @@
 <template>
   <div :class="`input-container ${isFocused ? 'focus' : ''}`">
+    <textarea
+      v-if="type === 'textarea'"
+      @focus="focus()"
+      @blur="blur()"
+      :name="name"
+      v-model="text"
+      class="input"
+    />
     <input
+      v-else
       @focus="focus()"
       @blur="blur()"
       :type="type"
@@ -56,6 +65,13 @@ export default {
   border-radius: 4px;
   transition: 0.3s;
 }
+textarea.input {
+  padding: 0.8rem 1.2rem;
+  min-height: 150px;
+  border-radius: 4px;
+  resize: none;
+  overflow-y: auto;
+}
 .input-container label {
   position: absolute;
   top: 50%;
@@ -68,6 +84,10 @@ export default {
   pointer-events: none;
   z-index: 1000;
   transition: 0.5s;
+}
+.input-container.textarea label {
+  top: 1rem;
+  transform: translateY(0);
 }
 .input-container span {
   position: absolute;
@@ -88,7 +108,7 @@ export default {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-  background-color: #4a6572;
+  background-color: #344955;
   top: 50%;
   transform: translateY(-50%);
 }

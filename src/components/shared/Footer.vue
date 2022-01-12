@@ -10,18 +10,19 @@
     </span>
 
     <div class="px-8">
-      <v-btn icon color="grey" class="px-2">
+      <v-btn icon color="grey" class="mx-1">
         <v-icon> mdi-facebook </v-icon>
       </v-btn>
-      <v-btn icon color="grey" class="px-2">
+      <v-btn icon color="grey" class="mx-1">
         <v-icon> mdi-instagram </v-icon>
       </v-btn>
-      <v-btn icon color="grey" class="px-2">
+      <v-btn icon color="grey" class="mx-1">
         <v-icon> mdi-linkedin </v-icon>
       </v-btn>
-      <v-btn icon color="grey" class="px-2">
+      <v-btn icon color="grey" class="mx-1">
         <v-icon> mdi-github </v-icon>
       </v-btn>
+      <v-btn color="#F9AA33" class="ml-2" to="/contactUs"> Contact Us </v-btn>
     </div>
   </footer>
 </template>
