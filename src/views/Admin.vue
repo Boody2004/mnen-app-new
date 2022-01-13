@@ -1,6 +1,6 @@
 <template>
   <section style="margin: 1.5%">
-    <div class="Map Input Data">
+    <div class="Map Input Data py-5">
       <h2
         class="text-center rounded-t-lg pa-3"
         style="color: #232f34; background-color: #f9aa33"
