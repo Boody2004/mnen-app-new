@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div style="height: 90vh; background-color: #344955; padding-top: 10rem">
+    <div id="title" style="background-color: #344955; padding-top: 10rem">
       <div class="text-h2 white--text text-center font-weight-regular">
         About Us
       </div>
@@ -11,6 +11,9 @@
         eligendi quibusdam, esse numquam veniam consectetur tempore aperiam
         ducimus? Sed. Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Ad iure laudantium aut ut odit fuga ipsam reiciendis nisi quisquam
+        placeat eligendi quibusdam, esse numquam veniam consectetur tempore
+        aperiam ducimus? Sed. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Ad iure laudantium aut ut odit fuga ipsam reiciendis nisi quisquam
         placeat eligendi quibusdam, esse numquam veniam consectetur tempore
         aperiam ducimus? Sed. Lorem ipsum dolor sit amet consectetur adipisicing
         elit. Ad iure laudantium aut ut odit fuga ipsam reiciendis nisi quisquam
@@ -59,10 +62,16 @@ export default {
 </script>
 
 <style scoped>
+#title {
+  height: 90vh;
+}
 .p {
   padding: 32px 20%;
 }
 @media (max-width: 768px) {
+  #title {
+    height: 120vh;
+  }
   .p {
     padding: 32px 0;
   }

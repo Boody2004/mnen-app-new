@@ -3,7 +3,6 @@
     <div class="sidebar close">
       <div class="logo-details">
         <i class="menu fas fa-bars"></i>
-        <!-- <i class="menu fi fi-rr-align-justify"></i> -->
         <a href="/">
           <span class="logo_name">Mnen app</span>
         </a>
@@ -120,6 +119,9 @@ a {
   min-width: 78px;
   text-align: center;
   line-height: 50px;
+}
+.sidebar.close .logo-details a {
+  display: none;
 }
 .sidebar .logo-details .logo_name {
   font-size: 22px;
