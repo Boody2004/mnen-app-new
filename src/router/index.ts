@@ -5,6 +5,7 @@ import Admin from "../views/Admin.vue";
 import Map from "../views/Map.vue";
 import AboutUs from "../views/AboutUs.vue";
 import ContactUs from "../views/ContactUs.vue";
+import Inspired from "../views/Inspired.vue";
 
 Vue.use(VueRouter);
 
@@ -33,6 +34,11 @@ const routes: Array<RouteConfig> = [
     path: "/contactUs",
     name: "Contact Us",
     component: ContactUs,
+  },
+  {
+    path: "/gitInspired",
+    name: "Git Inspired",
+    component: Inspired,
   },
 ];
 

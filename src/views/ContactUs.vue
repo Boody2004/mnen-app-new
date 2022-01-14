@@ -85,6 +85,8 @@
         </v-card>
       </div>
 
+      <v-divider vertical class="ml-12"></v-divider>
+
       <div class="banner-right d-flex">
         <div class="section-heading">
           <div class="ma-8">
@@ -101,7 +103,7 @@
           <v-divider class="mx-8"></v-divider>
 
           <div class="ma-8">
-            <h3 class="pb-4"><a href="#">Get Inspired</a></h3>
+            <h3 class="pb-4"><a href="/gitInspired">Get Inspired</a></h3>
             <p
               class="font-weight-regular"
               style="color: #7f7f7f; font-size: 1rem"
