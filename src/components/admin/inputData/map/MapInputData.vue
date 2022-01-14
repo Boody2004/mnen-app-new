@@ -13,7 +13,13 @@
 
       <v-divider></v-divider>
 
-      <v-stepper-step color="#F9AA33" step="3"> Supermarket </v-stepper-step>
+      <v-stepper-step color="#F9AA33" :complete="e1 > 3" step="3">
+        Supermarket
+      </v-stepper-step>
+
+      <v-divider></v-divider>
+
+      <v-stepper-step color="#F9AA33" step="4"> Cinemas </v-stepper-step>
     </v-stepper-header>
 
     <v-stepper-items>
@@ -38,6 +44,16 @@
       <v-stepper-content step="3">
         <v-card class="mb-12" color="#344955" height="auto">
           <Input v-if="supermarkets" :locationData="supermarkets" />
+        </v-card>
+
+        <v-btn color="#F9AA33" @click="e1 = 4"> Continue </v-btn>
+
+        <v-btn class="ml-2" @click="e1 = 2" text> Cancel </v-btn>
+      </v-stepper-content>
+
+      <v-stepper-content step="4">
+        <v-card class="mb-12" color="#344955" height="auto">
+          <Input v-if="cinemas" :locationData="cinemas" />
         </v-card>
 
         <v-btn @click="save = !save" color="#F9AA33"> Save </v-btn>
@@ -68,9 +84,11 @@ export default {
     return {
       e1: 1,
       save: false,
+
       pharmacies: undefined,
       atms: undefined,
       supermarkets: undefined,
+      cinemas: undefined,
     };
   },
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
@@ -93,6 +111,13 @@ export default {
       .get("https://mnen.herokuapp.com/api/getSupermarket")
       .then((response) => {
         this.supermarkets = response.data;
+      })
+      .catch((err) => console.error(err));
+
+    axios
+      .get("https://mnen-app.herokuapp.com/api/getCinema")
+      .then((response) => {
+        this.cinemas = response.data;
       })
       .catch((err) => console.error(err));
   },
