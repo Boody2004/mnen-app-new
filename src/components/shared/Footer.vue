@@ -23,8 +23,8 @@
         <v-icon> mdi-github </v-icon>
       </v-btn>
       <div class="text-center">
-        <v-btn outlined color="#F9AA33" class="mt-2" to="/contactUs">
-          Contact Us
+        <v-btn outlined color="#F9AA33" class="mt-2" to="/gitInspired">
+          Get Inspired
         </v-btn>
       </div>
     </div>
