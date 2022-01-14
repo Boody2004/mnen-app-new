@@ -52,9 +52,10 @@ export default {
           subTitle: "Map Location",
           product: [
             true,
-            { productTitle: "Pharmacys" },
-            { productTitle: "Atms" },
-            { productTitle: "Supermarkets" },
+            { productTitle: "Pharmacys," },
+            { productTitle: "Atms," },
+            { productTitle: "Supermarkets and" },
+            { productTitle: "Cinemas" },
           ],
           btn: true,
           btnName: "Map",
