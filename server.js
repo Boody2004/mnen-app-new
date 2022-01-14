@@ -9,17 +9,17 @@ const cors = require("cors");
 dotenv.config();
 const app = express();
 app.use(cors());
-app.get("/api/getAtm", (req, res) => {
-  axios.get("https://mnen-api.herokuapp.com/atmLocations").then((response) => {
-    res.send(response.data);
-  });
-});
 app.get("/api/getPharmacy", (req, res) => {
   axios
     .get("https://mnen-api.herokuapp.com/pharmacyLocations")
     .then((response) => {
       res.send(response.data);
     });
+});
+app.get("/api/getAtm", (req, res) => {
+  axios.get("https://mnen-api.herokuapp.com/atmLocations").then((response) => {
+    res.send(response.data);
+  });
 });
 app.get("/api/getSupermarket", (req, res) => {
   axios
