@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="my-10">
     <div style="height: 60vh; width: 90%; margin: 2% 5%">
       <!-- <div v-if="!pharmacies || !atms || !supermarkets || !cinemas">
         <v-progress-circular
@@ -140,16 +140,25 @@
         </v-btn>
       </v-row>
     </div>
+
+    <div style="margin: 2% 5%">
+      <ItemShowData v-if="showPharmacy == true" :inputData="pharmacies" />
+      <ItemShowData v-if="showAtm == true" :inputData="atms" />
+      <ItemShowData v-if="showSupermarket == true" :inputData="supermarkets" />
+      <ItemShowData v-if="showCinema == true" :inputData="cinemas" />
+    </div>
   </section>
 </template>
 
 <script>
+import ItemShowData from "@/components/map/ItemShowData.vue";
 import axios from "axios";
 import { latLng } from "leaflet";
 import { LMap, LTileLayer, LMarker, LPopup } from "vue2-leaflet";
 
 export default {
   components: {
+    ItemShowData,
     LMap,
     LTileLayer,
     LMarker,
@@ -158,8 +167,8 @@ export default {
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   data() {
     return {
-      atms: undefined,
       pharmacies: undefined,
+      atms: undefined,
       supermarkets: undefined,
       cinemas: undefined,
 
