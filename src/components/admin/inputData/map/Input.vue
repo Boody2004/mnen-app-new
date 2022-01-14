@@ -1,5 +1,5 @@
 <template>
-  <div class="container" style="padding: 0 10%">
+  <section>
     <div class="pb-7 pt-14">
       <ContactFormField name="title" type="text" labelText="Name" />
       <ContactFormField name="title" type="text" labelText="Section Name" />
@@ -12,6 +12,7 @@
         </v-col>
       </v-row>
     </div>
+
     <div class="pt-7 pb-14">
       <div class="py-1" v-for="(dataInput, i) in locationData" :key="i">
         <v-card color="grey lighten-3">
@@ -21,7 +22,7 @@
           <v-card-subtitle> {{ dataInput.name }} </v-card-subtitle>
 
           <v-row class="pa-2 ma-1">
-            <div class="d-flex">
+            <div class="d-flex align-center">
               <span class="mr-3">Lon</span>
               <h3>{{ dataInput.lon }}</h3>
             </div>
@@ -64,7 +65,7 @@
         </v-bottom-sheet>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -95,8 +96,11 @@ export default {
 </script>
 
 <style scoped>
+section {
+  padding: 0 10%;
+}
 @media screen and (max-width: 425px) {
-  .container {
+  section {
     padding: 0 5%;
   }
 }
