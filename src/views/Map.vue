@@ -1,16 +1,19 @@
 <template>
   <section class="my-10">
-    <div style="height: 60vh; width: 90%; margin: 2% 5%">
-      <!-- <div v-if="!pharmacies || !atms || !supermarkets || !cinemas">
-        <v-progress-circular
-          :size="150"
-          :width="10"
-          color="amber"
-          indeterminate
-        >
-        </v-progress-circular>
-      </div> -->
+    <div
+      v-if="!pharmacies || !atms || !supermarkets || !cinemas"
+      style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      "
+    >
+      <v-progress-circular :size="150" :width="10" color="amber" indeterminate>
+      </v-progress-circular>
+    </div>
 
+    <div style="height: 60vh; margin: 2% 5%">
       <l-map
         v-if="pharmacies && atms && supermarkets && cinemas"
         :zoom="zoom"
