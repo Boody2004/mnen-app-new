@@ -6,3 +6,13 @@
 
 **HAVE FUN 👌**
 **Thanks, Abdelrahman-BE**
+
+```
+npm install
+```
+
+### Compiles and minifies for production
+
+```
+npm run serve
+```
