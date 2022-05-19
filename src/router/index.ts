@@ -3,7 +3,6 @@ import VueRouter, { RouteConfig } from "vue-router";
 import Home from "../views/Home.vue";
 import Admin from "../views/Admin.vue";
 import Map from "../views/Map.vue";
-import AboutUs from "../views/AboutUs.vue";
 import ContactUs from "../views/ContactUs.vue";
 import Inspired from "../views/Inspired.vue";
 
@@ -24,11 +23,6 @@ const routes: Array<RouteConfig> = [
     path: "/map",
     name: "Map",
     component: Map,
-  },
-  {
-    path: "/aboutUs",
-    name: "About Us",
-    component: AboutUs,
   },
   {
     path: "/contactUs",
