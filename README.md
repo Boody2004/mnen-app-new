@@ -1,11 +1,10 @@
 # mnen-app-new
 
-## go to website [mnen-app](https://mnen-app.herokuapp.com/)
+## go to website [Mnen App](https://mnen-app.herokuapp.com/)
 
-<b>coded by [Boody-BE](https://github.com/Boody2004/mnen-app-new)</b>
+<b>coded by [Launchy](https://linklaunchy.vercel.app/launchy)</b>
 
 **HAVE FUN 👌**
-**Thanks, Abdelrahman-BE**
 
 ```
 npm install
