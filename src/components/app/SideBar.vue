@@ -34,20 +34,6 @@
           </div>
         </li>
       </ul>
-
-      <ul class="nav-links">
-        <li>
-          <a href="/admin">
-            <div class="profile-details">
-              <img
-                src="https://res.cloudinary.com/dirbnpgsp/image/upload/v1641757746/BE_ggavgp.png"
-                alt="logo"
-              />
-              <div class="profile_name">Admin</div>
-            </div>
-          </a>
-        </li>
-      </ul>
     </div>
 
     <div class="content">
